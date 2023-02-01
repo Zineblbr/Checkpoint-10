@@ -1,0 +1,15 @@
+PROCEDURE insertion_sort(arr[], n)
+BEGIN
+var
+	x, j : INTEGER;
+
+	FOR i FROM 1 TO n-1 STEP 1 DO
+		x := arr[i]                
+		j := i
+		WHILE ( j > 0 et arr[j-1] > x)
+			arr[j] := arr[j - 1]
+			j := j - 1
+		END_WHILE
+		arr[j] := x 
+	END_FOR
+END
